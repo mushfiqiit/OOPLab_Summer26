@@ -10,6 +10,8 @@ package com.mycompany.helloworldproject;
  */
 public class SavingsAccount extends Account {
     public void addInterest() {
-        balance=balance+balance*0.1;
+        double balance=getBalance();
+        double newBalance=balance+balance*0.1;
+        setBalance(newBalance, "ABCD");
     }
 }

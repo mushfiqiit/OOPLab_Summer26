@@ -14,11 +14,12 @@ public class HelloWorldProject {
         SavingsAccount Karim= new SavingsAccount();
         
         System.out.print("Account balance before interest is ");
-        System.out.println(Karim.balance);
+        System.out.println(Karim.getBalance());
         
         Karim.addInterest();
+        Karim.setBalance(0.0, "BCDE");
         
         System.out.print("Account balance after interest is ");
-        System.out.println(Karim.balance);
+        System.out.println(Karim.getBalance());
     }
 }
